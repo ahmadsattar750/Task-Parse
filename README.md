@@ -4,7 +4,6 @@
 
 Task Parse is a small web app that lets instructors post coding assignments and lets students submit their code through a built-in editor. Before a submission is actually saved, a custom **parser/checker** looks at the code and tells the student what is missing (required keywords, basic structure, language-specific rules, etc.).
 
-I built this on purpose to stay **simple and readable** so I can comfortably walk through every line during the viva, instead of hiding behind a big framework.
 
 ---
 
@@ -65,12 +64,6 @@ The instructor can see every assignment in one place and delete the ones that ar
 A small form to create an assignment — title, description, language, deadline and the keywords the parser should look for.
 
 ![Create assignment](Documentataion/screens/10_admin_new_assignment.png)
-
-### All Submissions
-
-A central list of every submission made by every student.
-
-![Admin submissions list](Documentataion/screens/11_admin_submissions.png)
 
 ### Submission Detail (Grading)
 
@@ -142,7 +135,7 @@ The SQLite database is created automatically the first time the app boots, insid
 | Role    | Email                  | Password  |
 |---------|------------------------|-----------|
 | Admin   | admin@taskparse.com    | admin123  |
-| Student | ahmaddsattar@student.com        | ahmad123    |
+| Student | ahmadsattar@student.com        | ahmad123    |
 
 You can also create your own student account from the **Sign up** page.
 
@@ -318,7 +311,7 @@ When a final submission happens, the result is also saved into the `parser_logs`
 
 ## Notes & Honest Limitations
 
-- Passwords are stored as plain text on purpose to keep the demo simple. In a real production app they must be hashed (for example with `bcrypt`).
+- Passwords are stored as plain text on purpose to keep the demo simple. In a real production app, they must be hashed (for example, with `bcrypt`).
 - The parser is a string-based checker, not a real compiler. It is enough to teach the idea of automated validation, but it would not catch logical or runtime errors.
 - The app is not optimized for scale or production deployment. The goal was clean, readable code that I can confidently explain end-to-end.
 
@@ -326,4 +319,4 @@ When a final submission happens, the result is also saved into the `parser_logs`
 
 ## Author
 
-Built by **Ahmad** as a final-year project. Feel free to open an issue or fork the repo if you want to extend it.
+Built by **Ahmad Sattar** as a Web App Development Course Semester Project.
