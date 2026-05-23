@@ -309,14 +309,6 @@ When a final submission happens, the result is also saved into the `parser_logs`
 
 ---
 
-## Notes & Honest Limitations
-
-- Passwords are stored as plain text on purpose to keep the demo simple. In a real production app, they must be hashed (for example, with `bcrypt`).
-- The parser is a string-based checker, not a real compiler. It is enough to teach the idea of automated validation, but it would not catch logical or runtime errors.
-- The app is not optimized for scale or production deployment. The goal was clean, readable code that I can confidently explain end-to-end.
-
----
-
 ## Author
 
 Built by **Ahmad Sattar** as a Web App Development Course Semester Project.
